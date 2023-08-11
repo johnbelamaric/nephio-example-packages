@@ -42,7 +42,7 @@ spec:
         - name: porch-server
           # Update image to the image of your porch apiserver build.
           image: docker.io/nephio/porch-server:jbelamaric
-          imagePullPolicy: IfNotPresent
+          imagePullPolicy: Always
           resources:
             requests:
               memory: 256Mi
