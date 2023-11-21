@@ -43,8 +43,9 @@ spec:
       containers:
         - name: porch-server
           # Update image to the image of your porch apiserver build.
-          image: gcr.io/kpt-dev/porch-server:v0.0.27
-          imagePullPolicy: IfNotPresent
+          #image: gcr.io/kpt-dev/porch-server:v0.0.31
+          image: docker.io/nephio/porch-server:jbelamaric
+          imagePullPolicy: Always
           resources:
             requests:
               memory: 256Mi
